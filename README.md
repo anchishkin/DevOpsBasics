@@ -1,8 +1,9 @@
-# DevOpsBasics
+# DevOpsBasics Readme for Main branch
 
 ## New Readme file
 
-Lorem ipsum dolorem. Lorem ipsum dolorem. Lorem ipsum dolorem. Lorem ipsum dolorem. Lorem ipsum dolorem
+> Lorem ipsum dolorem. Lorem ipsum dolorem. Lorem ipsum dolorem. Lorem ipsum dolorem. Lorem ipsum dolorem
+
 *Lorem ipsum dolorem. Lorem ipsum dolorem. Lorem ipsum dolorem. Lorem ipsum dolorem. Lorem ipsum dolorem*
 
 ### Ordered
