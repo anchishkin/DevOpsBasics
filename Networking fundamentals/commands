@@ -9,3 +9,8 @@ whois
 ssh
 telnet
 nmap
+ll
+cd ..
+cd
+netstat
+ip a
