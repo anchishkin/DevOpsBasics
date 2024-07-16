@@ -1,0 +1,49 @@
+ls
+ll
+cd
+ssh ec2-iser@ip_address
+git branch Linux commands_part1
+touch newfile
+cp ./New/Test.txt ./New2_2
+mv testtext.txt new.txt
+chmod 400 awskey.pem
+chown -R sanchishkin:sanchishkin ./newnew
+mdkir Testfiles
+rmdir EmptyFolder
+rm file.txt
+
+###
+curl https://dl.min.io/client/mc/release/linux-amd64/mc \
+  --create-dirs \
+  -o $HOME/minio-binaries/mc
+
+chmod +x $HOME/minio-binaries/mc
+export PATH=$PATH:$HOME/minio-binaries/
+
+###
+sudo yum update -y
+sudo yum install git -y
+git — version
+git config — global user.name “Your Name”
+git config — global user.email “your_email@example.com”
+
+###
+sudo yum install httpd -y
+sudo service httpd start
+sudo service httpd status
+
+###
+ps -e
+ps 5889
+
+###
+sudo amazon-linux-extras install epel -y
+sudo yum install stress -y
+top
+stress -c 4 -i 4 -m 4 --vm-bytes 256M -d 1 --hdd-bytes 10GB -t 300s
+kill 5889
+###
+cd /etc/httpd
+vim logs
+access 
+error logs
