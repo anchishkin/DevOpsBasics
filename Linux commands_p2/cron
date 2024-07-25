@@ -1,0 +1,1 @@
+ */5 * * * * /home/sanchishkin/script 1>> /home/sanchishkin/linux_p2/log/backup.log 2>> /home/sanchishkin/linux_p2/log/err_backup.log
