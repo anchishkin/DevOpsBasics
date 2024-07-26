@@ -1,0 +1,41 @@
+sudo su
+
+sed -i 's/# deb-src/deb-src/g' /etc/apt/sources.list
+
+sudo nano /etc/apt/sources.list
+
+##### Added text
+deb-src http://in.archive.ubuntu.com/ubuntu lunar main restricted
+##################################################################
+
+apt-get update
+
+apt-get upgrade
+
+cd /opt
+
+apt-get build-dep nginx -y
+
+apt-get source nginx
+
+apt-get install git
+
+git clone https://github.com/yaoweibin/nginx_upstream_check_module
+
+vim /opt/nginx-1.14.0/debian/rules
+
+--add-module=/opt/nginx_upstream_check_module
+
+cd /opt/nginx-1.14.0/
+
+patch -p1 < /opt/nginx_upstream_check_module/check_1.14.0+.patch
+
+dpkg-buildpackage -b --no-sign
+
+dpkg -i /opt/nginx-core_1.14.0-0ubuntu1.7_amd64.deb
+
+dpkg -i /opt/nginx-common_1.14.0-0ubuntu1.7_all.deb
+
+nginx -V
+
+uname -a
