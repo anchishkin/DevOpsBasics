@@ -1,0 +1,21 @@
+sudo apt update
+sudo apt upgrade
+apt install postgresql
+sudo -i -u postgres
+psql
+CREATE USER student WITH SUPERUSER PASSWORD 'xxxxxxxxx';
+\du
+exit
+sudo adduser student
+sudo -i -u postgres
+psql
+CREATE DATABASE student;
+exit
+sudo -i -u student
+psql
+CREATE DATABASE itca;
+\c itca
+CREATE SCHEMA devops4;
+create table phonesales (id serial, surname char(20), phones int)
+create table clients (id serial, name char(15), phones int, birth_date int)
+create table users (id serial, surname char(10), phones int, card_number int)
